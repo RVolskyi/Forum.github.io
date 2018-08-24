@@ -1,0 +1,271 @@
+html {
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	height: 100%;
+
+}
+
+body {
+	min-height: 100vh;
+	background-color: #ebd9c8;
+}
+
+.header {
+	display: block;
+	flex-direction: column;
+	justify-content: center;
+	background-color: var(--headerBgColor);
+	height: 14vh;
+	min-height: 70px
+}
+
+.header-wrap {
+	padding: 0 7% 0 7%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 14vh;
+}
+
+.header-text__right a {
+	display: block;
+	text-decoration: none;
+	color: var(--headerTextMain-color);
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.header-text__left {
+	color: var(--headerTextMain-color);
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.logo{
+	 display: block;
+	 height: 14vh;
+ }
+
+
+/*---Menu---*/
+.menu-wrap {
+	display: flex;
+	justify-content: space-around;
+	padding-left: 9%;
+	background-color: var(--mainDarckColor);
+}
+
+.menu {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu:after {
+	display: block;
+	content: ' ';
+	clear: both;
+	float: none;
+}
+.menu > li {
+	float: left;
+	position: relative;
+}
+.menu > li > a {
+	display: block;
+	width: 60px;
+	padding: 10px;
+	color: var(--headerTextMain-color);
+	background-color: var(--mainDarckColor);
+	text-decoration: none;
+	font-size: 1em;
+}
+.menu > li > a:hover {
+	background-color: var(--darckestHoverText);
+	transition: 0.2s;
+}
+
+.submenu {
+	display: none;
+	margin-top: 6px;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	border: 1px solid var(--mainDarckColor);
+}
+
+.submenu > li {
+	display: block;
+}
+
+.submenu > li > a {
+	display: block;
+	padding: 8px;
+	width: 120px;
+	color: var(--headerTextMain-color);
+	background-color: var(--mainDarckColor);
+	text-decoration: none;
+	font-size: 0.9em;
+}
+
+.submenu > li > a:hover {
+	text-decoration: none;
+	background-color: var(--darckestHoverText);
+	transition: 0.2s;
+}
+
+.menu > li:hover > .submenu {
+	display: block;
+}
+
+.submenu-interest__600px {
+	display: none;
+}
+/*---//Menu---*/
+
+
+
+/*-----SEARCH_FORM----*/
+.header-search {
+	float: right;
+	margin-top: -22px;
+	margin-right: 10%;
+}
+
+.header-search__submit {
+	text-decoration: none;
+}
+/*-----//SEARCH_FORM----*/
+
+
+/*-----MAIN-----*/
+.wrap-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+.interest-nav {
+	margin-top: 1vh;
+	width: 100%;
+}
+
+.main-nav__list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.main-nav__list a {
+	display: block;
+	margin: 2px;
+	padding: 3px;
+	background-color: #eeb89e;
+	border: 0px;
+	text-decoration: none;
+	color: var(--mainDarckColor);
+	font-size: 0.8em;
+}
+
+.main-nav__list a:hover {
+	color: var(--darckestHoverText);
+	transition: 0.2s;
+}
+
+.topic-wrap {
+	margin-top:1vh;
+}
+
+.topic {
+	margin-bottom: 10px;
+	display: flex;
+	padding-left: 10px;
+	border: solid 1px var(--mainDarckColor);
+}
+
+.forum-block {
+	width: 100%;
+}
+
+.forum-img {
+	height: 20px;
+}
+
+.topic-userName {
+	font-weight: bold;
+	color: var(--headerBgColor);
+}
+
+.topic-data {
+	font-style: italic;
+	color: #de6600;
+	font-size: 0.7em;
+}
+
+.topic-body {
+	color: var(--mainDarckColor);
+}
+
+.topic-answer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 7px;
+	max-width: 50px;
+	text-align: start;
+	border-left: solid 1px var(--mainDarckColor);
+	font-weight: bold;
+}
+
+.topic-answerText {
+	font-size: 0.7em;
+	font-style: italic;
+	font-weight: 100;
+	color: var(--headerBgColor);
+}
+
+.topic-answerNumber {
+	display: flex;
+	align-items: center;
+	flex-grow: 3;
+	text-align: center;
+	padding-top: 5px;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: var(--mainDarckColor);
+}
+
+.topic-TextMore {
+	display: flex;
+	justify-content: flex-end;
+	text-decoration: none;
+	font-style: italic;
+	color: var(--mainDarckColor);
+	font-size: 0.8em;
+}
+
+
+/*-----FOOTER-----*/
+footer {
+	position: fixed;
+	width: 100%;
+	left: 0; bottom: 0;
+	padding: 7px;
+	background-color: var(--mainDarckColor);
+	color: var(--headerTextMain-color);
+	font-size: 0.8em;
+}
+
+
+
+
+
