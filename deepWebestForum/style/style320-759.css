@@ -1,0 +1,169 @@
+@media screen and (max-device-width: 759px) {
+
+	html {
+		font-size: 13px;
+	}
+
+	.header {
+		position: fixed;
+		height: 5vh;
+		width: 100%;
+		clear: both;
+	}
+
+	.header-wrap {
+		justify-content: flex-start;
+		padding-left: 25%;
+		height: 70px;
+	}
+
+	.logo {
+		display: block;
+		height: 60px;
+	}
+
+
+	/*------MobMENU-----*/
+	.header-mobMenu__icon {
+		display: block;
+		position: absolute;
+		top: 6px;
+		left: 1%;
+	}
+
+	.mobMenu-icon__img {
+		height: 60px;
+	}
+
+	.submenu-sub {
+		width: 100%;
+		list-style: none;
+		display: none;
+		position: relative;
+		top: 2px;
+		left: -5px;
+	}
+
+	.submenu-mob > li > a:hover {
+		background-color: #003f5a;
+		transition: 0.2s;
+	}
+
+	.submenu-mob {
+		display: none;
+		position: absolute;
+	}
+
+	.submenu-mob li {
+		margin-left: 166px;
+	}
+
+	.submenu-sub > li > a {
+		display: block;
+		position: relative;
+		float: left;
+		padding: 8px;
+		width: 150px;
+		color: #ebd9c8;
+		background-color: #003f5a;
+		text-decoration: none;
+		font-size: 1.1em;
+	}
+
+	.submenu-mob > li > a {
+		display: block;
+		position: inherit;
+		padding: 8px;
+		width: 150px;
+		color: #ebd9c8;
+		background-color: #002943;
+		text-decoration: none;
+		font-size: 1.1em;
+	}
+
+	.submenu-sub > li > a:hover {
+		text-decoration: none;
+		background-color: #00253c;
+		transition: 0.2s;
+	}
+
+	.menu-mob > li:hover > .submenu-sub {
+		display: block;
+	}
+
+	.submenu-sub > li:hover > .submenu-mob {
+		display: block;
+
+	}
+
+	.interest_submenu__mob {
+		position: absolute;
+		max-height: calc(100vh - 70px);
+		overflow: scroll;
+	}
+
+	.main-menu {
+		display: none;
+	}
+
+	.header-mobMenu__icon:hover > .main-menu {
+		display: block;
+		position: fixed;
+		top: 9.5vh;
+		width: 100%;
+	}
+
+	.header-text__left a{
+		font-size: 1.7em;
+	}
+
+	.header-text__right {
+		display: none;
+	}
+
+	.header-search {
+		display: none;
+	}
+
+	/*------/MobMENu-----*/
+
+
+
+	/*----INTEREST----*/
+	.interest-nav {
+		display: none;
+	}
+
+
+	/*---MAIN---*/
+	.main {
+		width: 94%;
+	}
+
+	.topic-wrap {
+		padding-top: 75px;
+	}
+
+	.topic {
+		margin-bottom: 5px;
+		margin-left: 5px;
+	}
+
+	footer {
+		display: none;
+	}
+
+
+}
+
+@media screen and (max-device-width: 370px) {
+
+	.menu > li > a {
+		padding: 7px;
+	}
+
+	.header-search {
+		display: none;
+	}
+
+}

@@ -8,13 +8,14 @@ html {
 body {
 	min-height: 100vh;
 	background-color: #ebd9c8;
+	overflow: auto;
 }
 
 .header {
 	display: block;
 	flex-direction: column;
 	justify-content: center;
-	background-color: var(--headerBgColor);
+	background-color: #007a7a;
 	height: 14vh;
 	min-height: 70px
 }
@@ -27,16 +28,20 @@ body {
 	height: 14vh;
 }
 
-.header-text__right a {
+.header-mobMenu__icon {
+	display: none;
+}
+
+.header-text__left a {
 	display: block;
 	text-decoration: none;
-	color: var(--headerTextMain-color);
+	color: #ebd9c8;
 	font-size: 1.5em;
 	text-align: center;
 }
 
-.header-text__left {
-	color: var(--headerTextMain-color);
+.header-text__right {
+	color: #ebd9c8;
 	font-size: 1.5em;
 	text-align: center;
 }
@@ -52,7 +57,7 @@ body {
 	display: flex;
 	justify-content: space-around;
 	padding-left: 9%;
-	background-color: var(--mainDarckColor);
+	background-color: #003f5a;
 }
 
 .menu {
@@ -76,13 +81,13 @@ body {
 	display: block;
 	width: 60px;
 	padding: 10px;
-	color: var(--headerTextMain-color);
-	background-color: var(--mainDarckColor);
+	color: #ebd9c8;
+	background-color: #003f5a;
 	text-decoration: none;
 	font-size: 1em;
 }
 .menu > li > a:hover {
-	background-color: var(--darckestHoverText);
+	background-color: #003f5a;
 	transition: 0.2s;
 }
 
@@ -92,7 +97,6 @@ body {
 	position: absolute;
 	top: 30px;
 	left: 0;
-	border: 1px solid var(--mainDarckColor);
 }
 
 .submenu > li {
@@ -102,16 +106,16 @@ body {
 .submenu > li > a {
 	display: block;
 	padding: 8px;
-	width: 120px;
-	color: var(--headerTextMain-color);
-	background-color: var(--mainDarckColor);
+	width: 150px;
+	color: #ebd9c8;
+	background-color: #003f5a;
 	text-decoration: none;
 	font-size: 0.9em;
 }
 
 .submenu > li > a:hover {
 	text-decoration: none;
-	background-color: var(--darckestHoverText);
+	background-color: #00253c;
 	transition: 0.2s;
 }
 
@@ -168,15 +172,15 @@ body {
 	display: block;
 	margin: 2px;
 	padding: 3px;
-	background-color: #eeb89e;
-	border: 0px;
+	background-color: #edb895;
+	/*border: 0px;*/
 	text-decoration: none;
-	color: var(--mainDarckColor);
+	color: #00253c;
 	font-size: 0.8em;
 }
 
 .main-nav__list a:hover {
-	color: var(--darckestHoverText);
+	color: #00253c;
 	transition: 0.2s;
 }
 
@@ -188,7 +192,7 @@ body {
 	margin-bottom: 10px;
 	display: flex;
 	padding-left: 10px;
-	border: solid 1px var(--mainDarckColor);
+	border: solid 1px #003f5a;
 }
 
 .forum-block {
@@ -201,7 +205,7 @@ body {
 
 .topic-userName {
 	font-weight: bold;
-	color: var(--headerBgColor);
+	color: #003f5a;
 }
 
 .topic-data {
@@ -211,7 +215,7 @@ body {
 }
 
 .topic-body {
-	color: var(--mainDarckColor);
+	color: #003f5a;
 }
 
 .topic-answer {
@@ -222,7 +226,7 @@ body {
 	padding: 0 7px;
 	max-width: 50px;
 	text-align: start;
-	border-left: solid 1px var(--mainDarckColor);
+	border-left: solid 1px #003f5a;
 	font-weight: bold;
 }
 
@@ -230,7 +234,7 @@ body {
 	font-size: 0.7em;
 	font-style: italic;
 	font-weight: 100;
-	color: var(--headerBgColor);
+	color: #007a7a;
 }
 
 .topic-answerNumber {
@@ -241,7 +245,7 @@ body {
 	padding-top: 5px;
 	font-weight: bold;
 	font-size: 1.3em;
-	color: var(--mainDarckColor);
+	color: #003f5a;
 }
 
 .topic-TextMore {
@@ -249,7 +253,7 @@ body {
 	justify-content: flex-end;
 	text-decoration: none;
 	font-style: italic;
-	color: var(--mainDarckColor);
+	color: #003f5a;
 	font-size: 0.8em;
 }
 
@@ -260,8 +264,8 @@ footer {
 	width: 100%;
 	left: 0; bottom: 0;
 	padding: 7px;
-	background-color: var(--mainDarckColor);
-	color: var(--headerTextMain-color);
+	background-color: #003f5a;
+	color: #ebd9c8;
 	font-size: 0.8em;
 }
 
